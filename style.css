@@ -1,0 +1,137 @@
+body {
+    height: 100dvw;
+    width: 100%;
+    background: rgb(16, 16, 16);
+    font-family: Helvetica, sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    
+}
+header {
+    z-index: 999;
+    top: 0;
+    position: sticky;
+}
+.main {
+    height: 100vw;
+    height: 100dvw;
+    background: none;
+}
+.Contact {
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    float: right;
+    background-color: transparent;
+    border-color: rgb(95, 12, 130);
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    transition: background-color 0.2s;
+}
+.Contact:hover {
+    background-color: rgb(95, 12, 130);
+}
+.logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+.portrait {
+    position: absolute;
+    top: 7px;
+    right: 1px;
+    height: 50dvw;
+
+}
+.information {
+    position: absolute;
+    margin: 0px 10px;
+    padding: 10px;
+    text-align:center;
+    left: 10px;
+}
+.name {
+    font-size: 100px;
+    padding: 0px;
+    font-family: Poppins; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+
+.tagline {
+    font-size: 23px;
+    position: relative;
+    bottom: 80px;
+}
+.about {
+    text-decoration: none;
+    line-height: 40px;
+    position: relative;
+    bottom: 50px;
+}
+.video {
+    object-position: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 3.5vw;
+    left: 0;
+}
+.overlay {
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative; 
+    text-align: center;
+}
+.lowButtons {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    border-color: rgb(95, 12, 130);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition: background-color 0.2s;
+}
+.lowButtons:hover {
+    background-color: rgb(95, 12, 130);
+}
+.lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon {
+    position: relative;
+    padding: 0px 15px 0px 10px;
+    color: rgb(95, 12, 130);
+    transition: color 0.2s;
+    font-size: 50px;
+    left: 80.5dvw;
+    top: 0px;
+}
+.social-icon:hover {
+    color: rgb(55, 6, 75);
+}
+.top {
+    background-color: rgb(16, 16, 16);
+    height: 3.5dvw;
+}
