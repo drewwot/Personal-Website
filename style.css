@@ -1,5 +1,5 @@
 body {
-    height: 100dvw;
+    height: 50dvw;
     width: 100%;
     background: rgb(16, 16, 16);
     font-family: Helvetica, sans-serif;
@@ -14,8 +14,7 @@ header {
     position: sticky;
 }
 .main {
-    height: 100vw;
-    height: 100dvw;
+    height: 50dvw;
     background: none;
 }
 .Contact {
