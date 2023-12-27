@@ -1,8 +1,8 @@
 body {
-    height: 49dvh;
+    height: 100dvh;
     width: 100%;
     background: rgb(16, 16, 16);
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif, Arial;
     color: white;
     margin: 0px;
     padding: 0px;
@@ -19,18 +19,28 @@ header {
 }
 .top {
     background-color: rgb(16, 16, 16);
-    height: 10%;
+    height: 6%;
     display: flex;
     width: 100dvw;
     position: sticky;
 }
+.top ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 1%;
+    position: relative;
+    list-style: none;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    direction: rtl;
+}
 .Contact {
     position: relative;
-    left: 83%;
     margin: 10px;
     padding: 10px;
-    width: 7%;
-    height: 5%;
+    width: 10%;
+    height: 100%;
     background-color: transparent;
     border-color: rgb(95, 12, 130);
     text-decoration: none;
@@ -49,11 +59,11 @@ header {
 }
 .social-icon {
     position: relative;
-    padding: 10px 15px 0px 10px;
+    padding: 20px 15px 0px 10px;
     color: rgb(95, 12, 130);
     transition: color 0.2s;
     font-size: 300%;
-    left: 82%;
+    top: .35em;
 }
 .social-icon:hover {
     color: rgb(55, 6, 75);
@@ -128,10 +138,7 @@ header {
 }
 @media only screen and (min-width: 1367px) and (max-width: 1650px) {
     .Contact {
-        left: 80%;
-    }
-    .social-icon {
-        left: 80%;
+        width: 13%;
     }
     .portrait {
         height: 90%;
@@ -143,6 +150,8 @@ header {
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
     .body {
         height: 100dvh;
+        width: 100%;
+        max-width: 1366px;
     }
     .main {
         width: 100%;
@@ -155,18 +164,8 @@ header {
     .video {
         width: 100%;
     }
-    .header {
-        width: 100%;
-    }
-    .top {
-        width: 100%;
-    }
     .Contact {
-        left: 75%;
-        width: 6em;
-    }
-    .social-icon {
-        left: 75%;
+        width: 15%;
     }
     .information {
         padding-left: 10px;
@@ -174,16 +173,23 @@ header {
     .name {
         display: none;
     }
+    .new-name {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+    }
     .name2 {
         display: block;
         position: relative;
-        font-size: 7em;
+        font-size: 8em;
         padding: 0px;
         margin: 0px;
         top: 10%;
         font-family: Poppins, Arial, Helvetica; 
         -webkit-text-stroke-color: black;
-        text-align: center;
     }
     .overlay {
         top: 10%;
@@ -213,11 +219,7 @@ header {
         width: 100%;
     }
     .Contact {
-        left: 70%;
-        width: 6em;
-    }
-    .social-icon {
-        left: 70%;
+        width: 20%;
     }
     .information {
         padding-left: 10px;
@@ -226,17 +228,23 @@ header {
     .name {
         display: none;
     }
+    .new-name {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+    }
     .name2 {
         display: block;
         position: relative;
-        font-size: 6em;
+        font-size: 7em;
         padding: 0px;
         margin: 0px;
         top: 10%;
         font-family: Poppins, Arial, Helvetica; 
         -webkit-text-stroke-color: black;
-        text-align: center;
-        right: 10%;
     }
     .overlay {
         top: 10%;
@@ -244,88 +252,17 @@ header {
         width: 100%;
     }
 }
-@media only screen and (min-width: 811px) and (max-width: 999px) {
+@media only screen and (min-width: 801px) and (max-width: 999px) {
     .body {
-        height: 100%;
-        width: 100%;
-        max-width: 999px;
+        height: 100vh;
     }
     .main {
-        width: 100dvw;
-        max-width: 999px;
-        height: 100dvh;
-        overflow: hidden;
-    }
-    .portrait {
-        display: none;
-    }
-    .video {
-        width: 100%;
-        height: 100dvh;
-    }
-    .header {
         width: 100%;
         max-width: 999px;
-    }
-    .top {
-        width: 100%;
-        max-width: 999px;
-    }
-    .overlay {
-        height: 100dvh;
-        width: 811px;
-        display: block;
+        height: 100vh;
     }
     .Contact {
-        left: 60%;
-        width: 6em;
-    }
-    .social-icon {
-        left: 60%;
-    }
-    .information {
-        padding-left: 10px;
-        width: 98%;
-        height: 50dvh;
-        
-    }
-    .name {
-        display: none;
-    }
-    .name2 {
-        display: block;
-        position: relative;
-        font-size: 6.8em;
-        padding: 0px;
-        padding-left: 5%;
-        margin: 0px;
-        top: 10%;
-        font-family: Poppins, Arial, Helvetica; 
-        -webkit-text-stroke-color: black;
-        text-align: left;
-        width: 50%;
-    }
-    .tagline {
-        width: 70%;
-        padding: 5%;
-        text-align: left;
-        top: 1em;
-    }
-    .about {
-        width: 70%;
-        text-align: left;
-        padding: 5%;
-    }
-
-}
-@media only screen and (min-width: 601px) and (max-width: 810px) {
-    .body {
-        height: 100vh;
-    }
-    .main {
-        width: 100%;
-        max-width: 810px;
-        height: 100vh;
+        width: 20%;
     }
     .portrait {
         display: none;
@@ -341,13 +278,7 @@ header {
     }
     .overlay {
         height: 100vh;
-    }
-    .Contact {
-        left: 50%;
-        width: 6em;
-    }
-    .social-icon {
-        left: 50%;
+        width: 100%;
     }
     .name {
         font-size: 5em;
@@ -357,10 +288,102 @@ header {
         bottom: 1.5em;
     }
     .information {
-        top: 5%;
+        width: 100%;
+        padding: 0 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
-@media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+    .body {
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        max-width: 800px;
+        height: 100vh;
+    }
+    .Contact {
+        width: 23%;
+    }
+    .portrait {
+        display: none;
+    }
+    .video {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .overlay {
+        height: 100vh;
+    }
+    .name {
+        font-size: 5em;
+        top: 10%;
+    }
+    .tagline {
+        bottom: 1.5em;
+    }
+    .information {
+        width: 100%;
+        padding: 0 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+    .body {
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        max-width: 700px;
+        height: 100vh;
+    }
+    .Contact {
+        width: 25%;
+    }
+    .portrait {
+        display: none;
+    }
+    .video {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .overlay {
+        height: 100vh;
+    }
+    .name {
+        font-size: 4.8em;
+        top: 10%;
+    }
+    .tagline {
+        bottom: 1.5em;
+    }
+    .information {
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 551px) and (max-width: 600px) {
     .body {
         height: 100vh;
     }
@@ -369,6 +392,9 @@ header {
         max-width: 600px;
         height: 100vh;
     }
+    .Contact {
+        width: 30%;
+    }
     .portrait {
         display: none;
     }
@@ -384,12 +410,93 @@ header {
     .overlay {
         height: 100vh;
     }
-    .Contact {
-        left: 40%;
-        width: 6em;
+    .name {
+        font-size: 5em;
+        top: 10%;
     }
-    .social-icon {
-        left: 40%;
+    .tagline {
+        bottom: 1.5em;
+    }
+    .information {
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 550px) {
+    .body {
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        max-width: 550px;
+        height: 100vh;
+    }
+    .Contact {
+        width: 35%;
+    }
+    .portrait {
+        display: none;
+    }
+    .video {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .overlay {
+        height: 100vh;
+    }
+    .name {
+        font-size: 5em;
+        top: 10%;
+    }
+    .tagline {
+        bottom: 1.5em;
+    }
+    .information {
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 441px) and (max-width: 499px) {
+    .body {
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        max-width: 499px;
+        height: 100vh;
+    }
+    .Contact {
+        width: 40%;
+    }
+    .portrait {
+        display: none;
+    }
+    .video {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .overlay {
+        height: 100vh;
     }
     .name {
         font-size: 5em;
@@ -402,16 +509,71 @@ header {
         display: none;
     }
     .information {
-        top: 5%;
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
     }
 }
-@media only screen and (min-width: 381px) and (max-width: 480px) {
+@media only screen and (min-width: 401px) and (max-width: 440px) {
     .body {
         height: 100vh;
     }
     .main {
         width: 100%;
-        max-width: 380px;
+        max-width: 440px;
+        height: 100vh;
+    }
+    .portrait {
+        display: none;
+    }
+    .video {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .overlay {
+        height: 100vh;
+    }
+    .top ul {
+        width: 74%;
+    }
+    .Contact {
+        width: 40%;
+    }
+    .name {
+        font-size: 5em;
+    }
+    .information {
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+    }
+    .about {
+        display: none;
+    }
+    .tagline {
+        padding-top: 15%;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+    .body {
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        max-width: 400px;
         height: 100vh;
     }
     .portrait {
@@ -430,88 +592,88 @@ header {
         height: 100vh;
     }
     .Contact {
-        left: 40%;
-        width: 5em;
+        width: 50%;
+    }
+    .social-icon {
+        display: none;
+    }
+    .name {
+        font-size: 5em;
+    }
+    .information {
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+    }
+    .tagline {
+        bottom: 1.5em;
+        font-size: 1.5em;
+        padding: 5% 2% 5% 2%;
+    }
+    .about {
+        display: none;
+    }
+    .lowButtons {
+        font-size: 1.5em;;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 349px) {
+    .body {
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+    }
+    .portrait {
+        display: none;
+    }
+    .video {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .overlay {
+        height: 100vh;
+    }
+    .Contact {
+        width: 50%;
+    }
+    .social-icon {
+        display: none;
+    }
+    .name {
+        font-size: 4em;
+    }
+    .information {
+        width: 100%;
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+    }
+    .tagline {
+        bottom: 1.5em;
         font-size: 1.2em;
-    }
-    .social-icon {
-        left: 40%;
-        padding: 10px 5px 10px 5px;
-    }
-    .logo {
-        height: 50%;
-        width: 12%;
-        padding-top: 15px;
-    }
-    .name {
-        font-size: 4em;
-    }
-    .information {
-        height: 90vh;
-        width: 100%;
-        top: 5%;
-    }
-    .tagline {
-        bottom: 1.5em;
-        font-size: 1.5em;
-        padding: 5% 2% 5% 2%;
+        padding: 0;
     }
     .about {
         display: none;
     }
     .lowButtons {
         font-size: 1.5em;;
-        width: 60%;
-    }
-}
-@media only screen and (max-width: 380px) {
-    .body {
-        height: 100vh;
-    }
-    .main {
-        width: 100%;
-        max-width: 380px;
-        height: 100vh;
-    }
-    .portrait {
-        display: none;
-    }
-    .video {
-        width: 100%;
-    }
-    .header {
-        width: 100%;
-    }
-    .top {
-        width: 100%;
-    }
-    .overlay {
-        height: 100vh;
-    }
-    .Contact {
-        left: 55%;
-        width: 6em;
-    }
-    .social-icon {
-        display: none;
-    }
-    .name {
-        font-size: 4em;
-    }
-    .information {
-        height: 90vh;
-        width: 100%;
-    }
-    .tagline {
-        bottom: 1.5em;
-        font-size: 1.5em;
-        padding: 5% 2% 5% 2%;
-    }
-    .about {
-        display: none;
-    }
-    .lowButtons {
-        font-size: 1.5em;;
-        width: 60%;
+        width: 50%;
     }
 }
