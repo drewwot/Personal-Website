@@ -96,7 +96,7 @@ header {
 }
 .main {
     margin: 0;
-    padding: 8dvh 0 0 0;
+    padding: 10dvh 0 0 0;
     height: 80vh;
     width: 100%;
     background-color: rgb(21, 21, 21);
@@ -204,21 +204,19 @@ hr {
         background-color: rgb(16, 16, 16);
         padding-top: 10vh;
         transition: 0.4s;
-
-        a {
-            text-align: center;
-            display: block;
-            margin: 0 auto 16px;
-            width: 100%;
-            max-width: 200px;
-            padding: 12px 16px;
-            background-color: rgb(21, 21, 21);
-            border: 1px solid rgb(95, 12, 130);
-        }
-
-        a:hover {
-            background-color: rgb(95, 12, 120);
-        }
+    }
+    .mobile-nav a {
+        text-align: center;
+        display: block;
+        margin: 0 auto 16px;
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 16px;
+        background-color: rgb(21, 21, 21);
+        border: 1px solid rgb(95, 12, 130);
+    }
+    .mobile-nav a:hover {
+        background-color: rgb(95, 12, 120);
     }
     .mobile-nav.is-active {
         left: 0;
@@ -280,21 +278,19 @@ hr {
         background-color: rgb(16, 16, 16);
         padding-top: 10vh;
         transition: 0.4s;
-
-        a {
-            text-align: center;
-            display: block;
-            margin: 0 auto 16px;
-            width: 100%;
-            max-width: 200px;
-            padding: 12px 16px;
-            background-color: rgb(21, 21, 21);
-            border: 1px solid rgb(95, 12, 130);
-        }
-
-        a:hover {
-            background-color: rgb(95, 12, 120);
-        }
+    }
+    .mobile-nav a {
+        text-align: center;
+        display: block;
+        margin: 0 auto 16px;
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 16px;
+        background-color: rgb(21, 21, 21);
+        border: 1px solid rgb(95, 12, 130);
+    }
+    .mobile-nav a:hover {
+        background-color: rgb(95, 12, 120);
     }
     .mobile-nav.is-active {
         left: 0;
@@ -356,21 +352,19 @@ hr {
         background-color: rgb(16, 16, 16);
         padding-top: 10vh;
         transition: 0.4s;
-
-        a {
-            text-align: center;
-            display: block;
-            margin: 0 auto 16px;
-            width: 100%;
-            max-width: 200px;
-            padding: 12px 16px;
-            background-color: rgb(21, 21, 21);
-            border: 1px solid rgb(95, 12, 130);
-        }
-
-        a:hover {
-            background-color: rgb(95, 12, 120);
-        }
+    }
+    .mobile-nav a {
+        text-align: center;
+        display: block;
+        margin: 0 auto 16px;
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 16px;
+        background-color: rgb(21, 21, 21);
+        border: 1px solid rgb(95, 12, 130);
+    }
+    .mobile-nav a:hover {
+        background-color: rgb(95, 12, 120);
     }
     .mobile-nav.is-active {
         left: 0;
