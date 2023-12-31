@@ -1,28 +1,28 @@
 body {
     height: 100dvh;
-    width: 100%;
+    width: 100vw;
     background: rgb(16, 16, 16);
     font-family: Helvetica, sans-serif, Arial;
     color: #F1FAFF;
     margin: 0px;
     padding: 0px;
+    background: none;
+    overflow: hidden;
 }
 header {
     z-index: 999;
     top: 0;
     position: fixed;
-    width: 100dvw;
+    width: 100vw;
     height: 75px;
 }
-.main {
-    height: 49dvh;
-    background: none;
-}
 .top {
+    margin: 0;
+    padding: 0;
     background-color: rgb(16, 16, 16);
     height: 100%;
     display: flex;
-    width: 100dvw;
+    width: 100%;
     position: sticky;
 }
 .top ul {
@@ -59,7 +59,7 @@ header {
     border-radius: 15px;
 }
 .nav-button:hover {
-    background-color: rgb(95, 12, 130, 0.5);
+    background-color: rgba(95, 12, 130, 0.5);
     border-color: rgb(95, 12, 130);
 }
 .nav-button a {
@@ -76,82 +76,14 @@ header {
 }
 .social-icon {
     position: relative;
-    padding: 20px 15px 0px 10px;
+    padding: 0px 15px 0px 10px;
     color: #F1FAFF;
     transition: color 0.2s;
     font-size: 300%;
     top: .4em;
 }
 .social-icon:hover {
-    color: rgb(95, 12, 130);
-}
-.portrait {
-    position: relative;
-    height: 99%;
-    top: 4.4em;
-}
-.information {
-    position: relative;
-    text-align:center;
-    width: 80%;
-}
-.name {
-    font-size: 7em;
-    padding: 0px;
-    font-family: Poppins, Arial, Helvetica; 
-    -webkit-text-stroke-width: .02em;
-    -webkit-text-stroke-color: black;
-  }
-
-.tagline {
-    font-size: 1.7em;
-    position: relative;
-    bottom: 3em;
-}
-.about {
-    font-size: 1.3em;
-    text-decoration: none;
-    line-height: 2em;
-    position: relative;
-    bottom: 1em;
-}
-.video {
-    object-position: cover;
-    object-fit: cover;
-    height: 100dvh;
-    width: 100dvw;
-    position: absolute;
-    top: 3.5vw;
-    left: 0;
-}
-.overlay {
-    height: 100vh;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative; 
-    text-align: center;
-}
-.lowButtons {
-    margin: 10px;
-    padding: 10px;
-    width: 8em;
-    height: 4em;
-    background-color: transparent;
-    border-color: rgb(95, 12, 130);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.8em;
-    transition: background-color 0.2s;
-    color: #F1FAFF;
-    cursor: pointer;
-    border-radius: 50px;
-}
-.lowButtons:hover {
-    background-color: rgb(95, 12, 130);
+    color: rgb(95, 12, 120);
 }
 .hamburger {
     display: none;
@@ -162,101 +94,73 @@ header {
 .mobile-nav {
     display: none;
 }
+.main {
+    margin: 0;
+    padding: 8dvh 0 0 0;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    overflow-y: auto;
+}
+.image-con {
+    height: 37vh;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    text-align: center;
+}
+.me_circle {
+    width: 35vh;
+    height: 35vh;
+    padding: 1vh 0;
+}
+.info {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 96%;
+    padding: 1% 2%;
+}
+.who-am-i {
+    margin-right: 2%;
+    width: 100%;
+    line-height: 30px;
+}
+.why-hire {
+    width: 100%;
+    line-height: 30px;
+}
+.bottom {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(16, 16, 16);
+    position: sticky;
+}
+hr {
+    margin: 0;
+    border-color: rgb(95, 12, 130);
+}
 @media only screen and (min-width: 1000px) and (max-width: 1366px) {
     .body {
         height: 100dvh;
-        width: 100%;
-        max-width: 1366px;
-    }
-    .main {
-        width: 100%;
-        height: 100dvh;
-    }
-    .portrait {
-        height: 90%;
-        top: 0;
-    }
-    .video {
-        width: 100%;
-    }
-    .nav-button {
-        width: 15%;
-    }
-    .information {
-        padding-left: 10px;
-    }
-    .name {
-        display: none;
-    }
-    .new-name {
-        position: relative;
-        margin: 0;
-        padding: 0;
-        top: 10%;
-        width: 100%;
-        text-align: center;
-    }
-    .name2 {
-        display: block;
-        position: relative;
-        font-size: 7em;
-        padding: 0px;
-        margin: 0px;
-        top: 10%;
-        font-family: Poppins, Arial, Helvetica; 
-        -webkit-text-stroke-color: black;
-    }
-    .overlay {
-        top: 10%;
-        height: 77%;
-    }
-    .nav-button {
-        width: 15%;
-    }
-}
-@media only screen and (min-width: 500px) and (max-width: 999px) {
-    .body {
-        height: 100vh;
-    }
-    .main {
-        width: 100%;
-        max-width: 999px;
-        height: 100vh;
-    }
-    .nav-button {
-        width: 20%;
-    }
-    .portrait {
-        display: none;
-    }
-    .video {
-        width: 100%;
     }
     .header {
         width: 100%;
     }
     .top {
         width: 100%;
+    }
+    .nav-button {
+        width: 15%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 999px) {
+    .top {
+        width: 100%;
         z-index: 99;
-    }
-    .overlay {
-        height: 100vh;
-        width: 100%;
-    }
-    .name {
-        font-size: 5em;
-        top: 10%;
-    }
-    .tagline {
-        bottom: 1.5em;
-    }
-    .information {
-        width: 100%;
-        padding: 0 5% 0 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
     .hamburger {
         position: relative;
@@ -275,7 +179,7 @@ header {
         content: '';
         display: block;
         width: 100%;
-        height: 4px;
+        height: 15%;
         background-color: rgb(255, 255, 255);
         margin: 8px 0px;
         transition: 0.4s;
@@ -325,63 +229,19 @@ header {
     .nav-button {
         display: none;
     }
-}
-@media only screen and (min-width: 500px) and (max-width: 600px) {
-    .hamburger {
-        width: 10%;
+    .info {
+        flex-wrap: wrap;
     }
 }
-@media only screen and (min-width: 371px) and (max-width: 499px) {
-    .body {
-        height: 100vh;
-    }
-    .main {
-        width: 100%;
-        max-width: 499px;
-        height: 100vh;
-    }
-    .nav-button {
-        width: 40%;
-    }
-    .portrait {
-        display: none;
-    }
-    .video {
-        width: 100%;
-    }
-    .header {
-        width: 100%;
-    }
+@media only screen and (min-width: 400px) and (max-width: 600px) {
     .top {
         width: 100%;
         z-index: 99;
     }
-    .overlay {
-        height: 100vh;
-    }
-    .name {
-        font-size: 5em;
-        top: 10%;
-    }
-    .tagline {
-        bottom: 1.5em;
-    }
-    .about {
-        display: none;
-    }
-    .information {
-        width: 100%;
-        padding: 10% 5% 0 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 90%;
-    }
     .hamburger {
         position: relative;
         display: block;
-        width: 10%;
+        width: 11%;
         cursor: pointer;
         height: 70%;
         padding-top: 20px;
@@ -445,67 +305,19 @@ header {
     .nav-button {
         display: none;
     }
-
+    .info {
+        flex-wrap: wrap;
+    }
 }
-@media only screen and (max-width: 370px) {
-    .body {
-        height: 100vh;
-    }
-    .main {
-        width: 100%;
-        max-width: 400px;
-        height: 100vh;
-    }
-    .portrait {
-        display: none;
-    }
-    .video {
-        width: 100%;
-    }
-    .header {
-        width: 100%;
-    }
+@media only screen and (max-width: 399px) {
     .top {
         width: 100%;
         z-index: 99;
     }
-    .overlay {
-        height: 100vh;
-    }
-    .nav-button {
-        width: 50%;
-    }
-    .social-icon {
-        display: none;
-    }
-    .name {
-        font-size: 4em;
-    }
-    .information {
-        width: 100%;
-        padding: 10% 5% 0 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 90%;
-    }
-    .tagline {
-        bottom: 1.5em;
-        font-size: 1.2em;
-        padding: 0;
-    }
-    .about {
-        display: none;
-    }
-    .lowButtons {
-        font-size: 1.5em;;
-        width: 50%;
-    }
     .hamburger {
         position: relative;
         display: block;
-        width: 15%;
+        width: 13%;
         cursor: pointer;
         height: 70%;
         padding-top: 20px;
@@ -569,5 +381,7 @@ header {
     .nav-button {
         display: none;
     }
-
+    .info {
+        flex-wrap: wrap;
+    }
 }
