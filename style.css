@@ -88,7 +88,7 @@ header {
 .portrait {
     position: relative;
     height: 99%;
-    top: 4.4em;
+    top: 7%;
 }
 .information {
     position: relative;
@@ -159,6 +159,9 @@ header {
 .name2 {
     display: none;
 }
+.tagline2 {
+    display: none;
+}
 .mobile-nav {
     display: none;
 }
@@ -173,8 +176,8 @@ header {
         height: 100dvh;
     }
     .portrait {
-        height: 90%;
-        top: 0;
+        height: 85%;
+        top: 6vh;
     }
     .video {
         width: 100%;
@@ -188,6 +191,9 @@ header {
     .name {
         display: none;
     }
+    .tagline {
+        display: none;
+    }
     .new-name {
         position: relative;
         margin: 0;
@@ -195,20 +201,29 @@ header {
         top: 10%;
         width: 100%;
         text-align: center;
+        font-size: 16px;
+        display: inline-block;
     }
     .name2 {
-        display: block;
+        display: inline-block;
         position: relative;
-        font-size: 7em;
+        font-size: 700%;
         padding: 0px;
         margin: 0px;
         top: 10%;
         font-family: Poppins, Arial, Helvetica; 
         -webkit-text-stroke-color: black;
     }
+    .tagline2 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 200%;
+        position: relative;
+        right: 10px;
+    }
     .overlay {
-        top: 10%;
-        height: 77%;
+        height: 79vh;
     }
     .nav-button {
         width: 15%;
